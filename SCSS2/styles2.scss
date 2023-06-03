@@ -1,0 +1,57 @@
+ @import '../scss/bootstrap.scss'; 
+ @import 'variables2';
+ @import 'mixins2';
+ 
+ 
+ h1{
+    font-size: $h1-size;
+    font-family: roboto;
+    
+ }
+ h2{ 
+    font-size: $h2-size;    
+ }
+ h3{
+   font-size: $h3-font-size;
+ }
+ h4{
+   font-size: $h4-font-size;
+ }
+ h5{
+   font-size: $h5-font-size;
+ }
+ p{
+   font-size: $h4-font-size;
+ } 
+ .text-sm{
+  font-size: $h4-font-size;
+ }
+ i{
+   color: $white;
+ }
+
+ a{
+  text-decoration: none;
+  padding: 0 10px;
+ }
+
+ .articulos{
+  background-color: $bg-articulo;
+ }
+
+ 
+ .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.reset-l{
+  margin:0;
+  padding: 0;
+  padding-right:4px;
+  background-color: greenyellow;
+}
+.reset{
+  padding: 0;
+  margin: 0;
+} 
+ 

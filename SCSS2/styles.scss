@@ -1,0 +1,73 @@
+@import "../scss/bootstrap.scss";
+@import "../SCSS2/variables2";
+@import "../SCSS2/mixins2";
+
+// @font-face {
+//   font-family: "Rage";
+//   src: url("../Fuentes/raged.ttf") format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-sans-serif;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.modal {
+  z-index: 999;  
+}
+
+img {
+  width: 100%;
+}
+
+
+
+.font-logo {
+  color: $primary;
+  font-family: $font-logo-leyenda;  
+  
+}
+
+.cont-fondo {
+  background-image: url("../Arisay/catalogoBrand/bg_header.jpg");
+  height: auto;
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .cont_ico i {
+   font-size: 30px;
+    color: $primary;
+  }
+} 
+
+.cont_ico_footer i {
+  font-size: 30px;
+  color: $primary;
+} 
+
+.dropdown-menu li a {
+  color: white;
+} 
+
+.avisos li a {
+  color: black;
+}
+
+.anch{
+    width: 50%;
+  } 
+
+.minimos{
+  padding-right: .5rem;
+  padding-left:  0;
+}

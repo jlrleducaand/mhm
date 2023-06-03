@@ -1,0 +1,45 @@
+@import url(_variablesPractica1.scss);
+@import url(_mixinsPractica1.scss);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 35% 35% 15%;
+}
+div header {
+  text-align: center;
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+div main {
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+div aside {
+  background-color: beige;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+div footer {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}/*# sourceMappingURL=practica1.css.map */

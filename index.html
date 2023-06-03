@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MHM</title>
+  <!-- libreria de bootstrap -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <!-- libreria de iconos de bootstrap -->
+  <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- favicon para pestaña -->
+  <link rel="icon" type="image/jpg" href="./Arisay/catalogoBrand/logotipo HRM .jpg">
+  <!-- hojas de estilos para el sitio -->
+  <link rel="stylesheet" href="./SCSS2/styles.css">
+  <link rel="stylesheet" href="./SCSS2/styles2.css">
+
+</head>
+
+<body class="mt-2">
+  <div class="container-fluid">
+    <!-- CABECERA -->
+
+    <div class="cont-fondo">
+      <div class="contenedor  d-flex justify-content-between  text-white text-center">
+        <div class="logo col-2 d-flex flex-column">
+          <a class="nav-link " aria-current="page" href="./index.html">
+            <img src="./Arisay/catalogoBrand/logotipo HRM .jpg" alt="" class="rounded-bottom-circle">
+            <h2 class="font-logo text-primary fs-2 mt-2 ">MHM</h2>
+          </a>
+        </div>
+        <div class="cont-titulo d-flex align-self-md-center">
+          <h1 class="m-2  m-md-5  flex-grow-1 justify-content-center">Mantenimiento de Hosteleria Mediterranea</h1>
+        </div>
+      </div>
+      <!-- Contenedor de Botones -->
+      <div class="contenedor">
+        <!-- Grupo de Botones de Navegacion 4 -->
+        <!-- <div class="container-fluid cont-nav4 d-flex flex-column gap-1 flex-md-row"> -->
+        <div class="container-fluid row d-flex justify-content-between reset">
+
+          <!--Boton Loging -->
+          <!-- <div class="vali-1 d-flex flex-column "> -->
+            <div class="btn-group col-12 col-sm-6 col-md-3 col-lg-2 reset my-1 my-md-2 px-1">
+
+            <button type="button" class="btn btn-lg btn-primary btn-outline-secondary text-white rounded-2"
+              data-bs-toggle="modal" data-bs-target="#loging">
+              <i class="bi bi-box-arrow-in-right"></i> Login
+            </button>
+            <!-- Modal PARA EL LOGING -->
+            <div class="modal fade" id="loging" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Form-Loging</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-light">
+                    <form class="row  pt-2">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boton Registro -->
+          <!-- <div class="vali-2 d-flex flex-column "> -->
+            <div class="btn-group col-12 col-sm-6 col-md-3 col-lg-2 reset my-1 my-md-2 px-1">
+
+            <button type="button" class="btn btn-lg btn-primary btn-outline-secondary text-white rounded-2"
+              data-bs-toggle="modal" data-bs-target="#register">
+              <i class="bi bi-person-plus"></i> Registro
+            </button>
+            <!-- Modal PARA EL REGISTRO -->
+            <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Form-Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-light">
+                    <form class="row  pt-2">
+                      <div class="col-md-6 ">
+                        <label for="inputEmail4" class="form-label">Nombre Contacto</label>
+                        <input type="email" class="form-control" id="inputContacto4">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nombre Establecimiento</label>
+                        <input type="email" class="form-control" id="inputEstablecimiento4">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="calle numero">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Direccion 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="otros detalles">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Provicia</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="inputState" class="form-label">Localidad</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>seleccione Localidad</option>
+                          <option value="Malaga">Malaga</option>
+                          <option value="Fuengirola">Fuengirola</option>
+                          <option value="Marbella">Marbella</option>
+                          <option value="Mijas">Mijas</option>
+                          <option value="Coin">Coin</option>
+                        </select>
+                      </div>
+                    </form>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Boton de Avisos -->
+          <!-- <div class="avis-1 dropdown d-flex flex-column "> -->
+            <div class="btn-group col-12 col-sm-6 col-md-3 col-lg-2 reset my-1 my-md-2 px-1">
+
+            <button type="button"
+              class="btn btn-lg btn-secondary btn-outline-primary dropdown-toggle  text-white flex-grow-1"
+              id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-megaphone"></i> Avisos
+            </button>
+            <!-- DESPLEGABLE PARA EL NAVEGADOR AVISOS -->
+            <ul class="dropdown-menu bg-dark w-50" aria-labelledby="dropdownMenuButton">
+              <!-- Lanzador para el modal Averias en un link -->
+              <li>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#averia">Averias</a>
+                <!-- Modal para AVISOS -->
+                <div class="modal fade" id="averia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+                  aria-labelledby="averiasLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="averiaLabel">Averias</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body bg-light">
+                        <form class="row  pt-2">
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Lanzador para el modal Pedidos en un link -->
+              <li>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#pedido">Pedidos</a>
+                <!-- Modal para PEDIDOS -->
+                <div class="modal fade" id="pedido" tabindex="0" aria-labelledby="pedidoLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="pedidoLabel">Averias</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>cuerpo del modal pedido</p>
+                        <form>
+                          <!-- Aquí van los campos del formulario para los pedidos -->
+                          <h1>prueba de modal pedido</h1>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- DIVISOR LINEA -->
+              <li>
+                <hr class="dropdown-divider ">
+              </li>
+
+              <!-- Lanzador para el modal Otros Avisos en un link -->
+              <li>
+                <a class="dropdown-item" href="HTML/formOtrosAvisos.html">Otros Avisos</a>
+                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#otroAviso">Otros Avisos</a>
+                <!-- Modal para PEDIDOS -->
+                <div class="modal fade" id="otroAviso" tabindex="0" aria-labelledby="otroAvisoLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="otroAvisoLabel">otroAviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>cuerpo del modal otroAviso</p>
+                        <form>
+                          <!-- Aquí van los campos del formulario para los otros Aviso -->
+                          <h1>prueba de modal otroAviso</h1>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Boton de Contacto -->
+          <!-- <div class="avis-2 d-flex flex-column "> -->
+            <div class="btn-group col-12 col-sm-6 col-md-3 col-lg-2 reset my-1 my-md-2 px-1">
+
+            <button type="button" class="btn btn-lg btn-secondary btn-outline-primary  rounded-2 text-white"
+              data-bs-toggle="modal" data-bs-target="#contacto">
+              <i class="bi bi-envelope"></i> Contacto
+            </button>
+            <!-- modal PARA EL  CONTACTO -->
+            <div class="modal fade" id="contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Form-Contacto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-light">
+                    <form class="row  pt-2">
+                      <label for="nombre">Nombre:</label>
+                      <input type="text" id="nombre" name="nombre" required>
+
+                      <label for="email">Correo Electrónico:</label>
+                      <input type="email" id="email" name="email" required>
+
+                      <label for="mensaje">Mensaje:</label>
+                      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Barra de Busqueda y Buscar -->
+          <!-- <div class="cont-form-buscar d-flex flex-row mt-lg-0"> -->
+            <div class="btn-group col-12  col-lg-4 reset my-1 my-md-2 px-1">
+
+            <input class="form-control me-3 " type="search" placeholder="Producto o servicio" aria-label="Search">
+            <button class="btn btn-success btn-outline-dark text-white fs-5 rounded-2" type="submit">Buscar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENEDOR MAIN -->
+    <main class="contenedor">
+      <!-- CARRUSEL DE PORTADA -->
+      <div id="carouselExampleCaptions" class="carousel slide mt-3">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <img src="./Arisay/catalogo/newCarrusel1.png" class="d-block w-lg-75" alt="...">
+              <div class="mt-2 card h-100 rounded-4 bg-success p-4 ">
+                <div class="card-body text-white d-flex flex-column">
+                  <h4 class="p-2 bg-black text-center">Mantenimiento Hostelería Mediterranea</h4>
+                  <p>Somos una empresa con mas de 20 años de experiencia en el sector de hostelería.
+                    Desde 1999 estamos realizando proyectos integrales de cocinas industriales e instalaciones de frio
+                    proporcionando un mantenimiento rapido, de calidad y aportando nuestro conocimiento para hacer
+                    realidad
+                    tus sueños</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <img src="./Arisay/catalogo/newCarrusel2jpg.jpg" class="d-block w-100" alt="...">
+              <div class="mt-2 card h-100 rounded-4 bg-success p-4 ">
+                <div class="card-body text-white">
+                  <h4 class="p-2 bg-black text-center"> Mantenimiento Hostelería Mediterranea</h4>
+                  <p class="w-100">Trabajamos con las mejores marcas del mercado para darte un producto de total
+                    garantia
+                    para que puedas dar el mejor servicio posible durante mas tiempo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+              <img src="./Arisay/catalogo/AlmaceenRepuestos2.png" class="d-block w-100" alt="...">
+              <div class="mt-2 card h-100 rounded-4 bg-success p-4 ">
+                <div class="card-body text-white">
+                  <h4 class="p-2 bg-black text-center">Mantenimiento Hostelería Mediterranea</h4>
+                  <p class="w-100">Tenemos el mejor servicio posible de postventa, mantenimiento y reparacion. Con
+                    recambios
+                    originales, de la mejor calidad posible y poniendo toda nuestro conocimiento a tu servicio.
+                    Contrata nuestro servicio de mantenimiento y olvidate de problemas, dedicandote a cocinar y servir.
+                    El resto es cosa nuestra.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon  text-white" aria-hidden="true"></span>
+            <i class="bi bi-arrow-left-circle-fill fs-6 "></i>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+          <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <i class="bi bi-arrow-right-circle-fill fs-6 "></i>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- DESPLEGABLES DE SELECCION -->
+      <div class="container-fluid reset">
+        <div class="container-fluid d-flex flex-column  my-2   flex-md-row flex-wrap justify-content-lg-center reset">
+          <div class="btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1 ">
+            <button class="btn btn-secondary btn-lg" type="button">
+              Todas las marcas
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark">
+              <li><a href="#">FAGOR</a></li>
+              <li><a href="#">ALMISON</a></li>
+              <li><a href="#">MOVILFRIT</a></li>
+              <li><a href="#">CEGASA</a></li>
+            </ul>
+          </div>
+
+          <div class="container-fluid btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1">
+
+            <button class="btn btn-secondary btn-lg" type="button">
+              Electrodomesticos
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark">
+              <li><a href="#">FREIDORAS</a></li>
+              <li><a href="#">COCINAS</a></li>
+              <li><a href="#">CALENTADORES</a></li>
+              <li><a href="#">EXTRACTORES</a></li>
+              <li><a href="#">PLANCHAS</a></li>
+              <li><a href="#">BARBACOAS</a></li>
+            </ul>
+          </div>
+
+          <div class="container-fluid btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1">
+
+            <button class="btn btn-secondary btn-lg" type="button">
+              Todo el menaje
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark">
+              <li><a href="#">CUBERTERIAS</a></li>
+              <li><a href="#">BANDEJAS</a></li>
+              <li><a href="#">CACEROLAS</a></li>
+              <li><a href="#">OLLAS</a></li>
+              <li><a href="#">ELECTRODOMESTICOS</a></li>
+              <li><a href="#">SARTENES</a></li>
+              <li><a href="#">BOLES</a></li>
+            </ul>
+          </div>
+
+          <div class="container-fluid btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1">
+            <button class="btn btn-secondary btn-lg" type="button">
+              Servicio y Distribucion
+            </button>
+            <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark">
+              <li><a href="#">PAPEL ALUMINIO</a></li>
+              <li><a href="#">FIAMBRERAS ALUMINIO</a></li>
+              <li><a href="#">TAPAS FIAMBRERAS</a></li>
+              <li><a href="#">FIL ROLLOS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENEDOR DE ARTICULOS MAIN -->
+      <div class="contenedor">
+
+        <section class="container-fluid row reset">
+          <div class="bg-black text-center">
+            <h3 class="bg-black text-white py-2 ">LOS MAS VENDIDOS</h3>
+          </div>
+          <div class="row reset">
+            <div class="col-12 col-md-6 col-lg-4 text-center p-0 mt-2">
+              <article class="card ">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/BañoMaria.bmp" alt="" class="">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+
+                  <h3 class="p-5px">Ref-001</h3>
+                  <h3>Calentador Baño Maria</h3>
+                  <div class=" bg-secondary   p-2 rounded-2  ">
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 my-2">
+              <article class="card ">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/Barbacoa.bmp" alt="" class="m-1">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+                  <h3>Ref-002</h3>
+                  <h3>Plancha a Gas</h3>
+                  <div class=" bg-secondary text-white  p-2 rounded-2 ">
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 my-2">
+              <article class="card ">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/CocinaGas.bmp" alt="" class="">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+                  <h3>Ref-003</h3>
+                  <h3>Cocina a Gas</h3>
+                  <div class=" bg-secondary text-white  p-2 rounded-2  ">
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 my-2">
+              <article class="card ">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/CocinaPaellera.bmp" alt="" class="">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+                  <h3>Ref-004</h3>
+                  <h3>Cocina de Paellas</h3>
+                  <div class=" bg-secondary text-white  p-2 rounded-2  ">
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 my-2">
+              <article class="card">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/Plancha.bmp" alt="" class="">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+                  <h3>Ref-005</h3>
+                  <h3>Plancha Gas</h3>
+                  <div class=" bg-secondary text-white  p-2 rounded-2  ">
+
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 my-2">
+              <article class="card">
+                <div class="card-body articulos">
+                  <img src="./Arisay/catalogo/Freidora.bmp" alt="" class="">
+                  <div class="estrellas">
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                    <i class="bi bi-star-fill text-warning fs-3"></i>
+                  </div>
+                  <h3>Ref-006</h3>
+                  <h3>Freidora Eletrica</h3>
+                  <div class=" bg-secondary text-white  p-2 rounded-2  ">
+                    <a href="" class="text-white">Especificaciones</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!--FOOTER  -->
+    <footer class="cont-fondo">
+      <div class=" my-3">
+        <div class="contenedor row ">
+          <!-- DESARROLLADO POR: -->
+          <div class="container-fluid col-12 col-md-6 col-lg-3 my-4 ">
+            <article class="card bg-transparent border-0">
+              <div class="body-card">
+                <h4 class="text-center py-2">Desarrollado por:</h4>
+                <p class="px-3 text-center">José Luis Román</p>
+              </div>
+            </article>
+          </div>
+          <!-- CONTACTANOS EN: -->
+          <div class="container-fluid col-12 col-md-6 col-lg-3 my-4">
+            <div class="card bg-transparent border-0">
+              <article class="body-card">
+                <div class="body-card">
+                  <h4 class="text-center py-2">Contactanos en:</h4>
+                  <div class="cont_ico d-flex flex-row justify-content-center justify-content-lg--start align-self-center py-0 px-3">
+                    <i class="bi bi-envelope-at-fill px-3"></i>
+                    <a class="p-0" href="mailto:info@hrm.es">
+                      <p>info@mhm.es</p>
+                    </a>
+                  </div>
+                  <div class="cont_ico d-flex flex-row justify-content-center justify-content-lg-start start align-self-center py-0 px-3">
+                    <i class="bi bi-telephone-fill px-3"></i>
+                    <p class="fs-5">555 555 5555</p>
+                  </div>
+                  
+              </article>
+            </div>
+          </div>
+          <!-- SIGUENOS EN: -->
+          <div class="container-fluid col-12 col-md-6 col-lg-3 my-4">
+            <article class="card bg-transparent border-0">
+              <div class="body-card">
+                <h4 class="text-center py-2">Siguenos en:</h4>
+                <div class="cont_ico_footer d-flex justify-content-center">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-whatsapp"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-telegram"></i></a>
+                  <a href=""><i class="bi bi-pinterest"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- AVISO LEGAL -->
+          <div class="col-12 col-md-6 col-lg-3 my-4 ">
+            <article class="card bg-transparent border-0">
+              <div class="body-card d-inline-block ">
+                <h4 class="text-center pt-2">Aviso Legal</h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn  w-100 fs-5" data-bs-toggle="modal" data-bs-target="#privacidad">
+                  Politica de Privacidad
+                </button>
+                <button type="button" class="btn  w-100 fs-5" data-bs-toggle="modal" data-bs-target="#Condiciones">
+                  Condiciones y Terminos
+                </button>
+                <button type="button" class="btn  w-100 fs-5" data-bs-toggle="modal" data-bs-target="#PoliticaCookies">
+                  Politica de Cookies
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="privacidad" tabindex="0" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Politica de Privacidad</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> Protección de datos de carácter personal según la LOPD
+                          _____________________________, en aplicación de la normativa vigente en materia de protección
+                          de
+                          datos de carácter
+                          personal, informa que los datos personales que se recogen a través de los formularios del
+                          Sitio
+                          web:
+                          ________________________________, se incluyen en los ficheros automatizados específicos de
+                          usuarios de los servicios
+                          de _______________________________
+                          La recogida y tratamiento automatizado de los datos de carácter personal tiene como finalidad
+                          el
+                          mantenimiento de la
+                          relación comercial y el desempeño de tareas de información, formación, asesoramiento y otras
+                          actividades propias de
+                          ______________________________________
+                          Estos datos únicamente serán cedidos a aquellas entidades que sean necesarias con el único
+                          objetivo de dar
+                          cumplimiento a la finalidad anteriormente expuesta.
+                          _______________________________________ adopta las medidas necesarias para garantizar la
+                          seguridad, integridad y
+                          confidencialidad de los datos conforme a lo dispuesto en el Reglamento (UE) 2016/679 del
+                          Parlamento Europeo y del
+                          Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que
+                          respecta al tratamiento de datos
+                          personales y a la libre circulación de los mismos.
+                          El usuario podrá en cualquier momento ejercitar los derechos de acceso, oposición,
+                          rectificación
+                          y cancelación
+                          reconocidos en el citado Reglamento (UE). El ejercicio de estos derechos puede realizarlo el
+                          propio usuario a través de
+                          email a: _________________________________ o en la dirección:
+                          ________________________________________
+                          El usuario manifiesta que todos los datos facilitados por él son ciertos y correctos, y se
+                          compromete a mantenerlos
+                          actualizados, comunicando los cambios a _________________________________________
+                          Finalidad del tratamiento de los datos personales:
+                          ¿Con qué finalidad trataremos tus datos personales?
+                          En __________________________________, trataremos tus datos personales recabados a través del
+                          Sitio Web:
+                          ______________________________, con las siguientes finalidades:
+                          1. En caso de contratación de los bienes y servicios ofertados a través de
+                          ____________________________, para
+                          mantener la relación contractual, así como la gestión, administración, información, prestación
+                          y
+                          mejora del
+                          servicio.
+                          2. Envío de información solicitada a través de los formularios dispuestos en
+                          ____________________________
+                          3. Remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o
+                          publicidad de
+                          ______________________________ y del sector.
+                          Te recordamos que puedes oponerte al envío de comunicaciones comerciales por cualquier vía y
+                          en
+                          cualquier momento,
+                          remitiendo un correo electrónico a la dirección indicada anteriormente.
+                          Los campos de dichos registros son de cumplimentación obligatoria, siendo imposible realizar
+                          las
+                          finalidades expresadas si
+                          no se aportan esos datos.
+                          ¿Por cuánto tiempo se conservan los datos personales recabados?
+                          Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial
+                          o
+                          no solicites su
+                          supresión y durante el plazo por el cuál pudieran derivarse responsabilidades legales por los
+                          servicios prestados.
+                          Legitimación:
+                          El tratamiento de tus datos se realiza con las siguientes bases jurídicas que legitiman el
+                          mismo:
+                          1. La solicitud de información y/o la contratación de los servicios de
+                          ___________________________, cuyos
+                          términos y condiciones se pondrán a tu disposición en todo caso, de forma previa a una
+                          eventual
+                          contratación.
+                          2. El consentimiento libre, específico, informado e inequívoco, en tanto que te informamos
+                          poniendo a tu
+                          disposición la presente política de privacidad, que tras la lectura de la misma, en caso de
+                          estar conforme, puedes
+                          aceptar mediante una declaración o una clara acción afirmativa, como el marcado de una casilla
+                          dispuesta al
+                          efecto.
+                          En caso de que no nos facilites tus datos o lo hagas de forma errónea o incompleta, no
+                          podremos
+                          atender tu solicitud,
+                          resultando del todo imposible proporcionarte la información solicitada o llevar a cabo la
+                          contratación de los servicios.
+                          Destinatarios:
+                          Los datos no se comunicarán a ningún tercero ajeno a _________________________________, salvo
+                          obligación legal.
+                          Como encargados de tratamiento, tenemos contratados a los siguientes proveedores de servicios,
+                          habiéndose
+                          comprometido al cumplimiento de las disposiciones normativas, de aplicación en materia de
+                          protección de datos, en el
+                          momento de su contratación:
+                           (ENCARGADO) ______________________________________________________, con domicilio en
+                          ___________________________________________, NIF/CIF nº ________________________, presta
+                          servicios de
+                          ________________________________________ .
+                           Puede consultar la política de privacidad y demás aspectos legales de la compañía en el
+                          siguiente
+                          enlace: ____________________________________________
+                           (ENCARGADO) ____________________________________________, con domicilio en
+                          ____________________________________________, NIF/CIF nº _________________________, presta
+                          servicios de
+                          ___________________________________________ .
+                           Puede consultar la política de privacidad y demás aspectos legales de la compañía en el
+                          siguiente
+                          enlace: ______________________________________________
+                          Datos recopilados por usuarios de los servicios
+                          En los casos en que el usuario incluya ficheros con datos de carácter personal en los
+                          servidores
+                          de alojamiento
+                          compartido, _______________________________________ no se hace responsable del incumplimiento
+                          por parte del
+                          usuario del RGPD.
+                          Retención de datos en conformidad a la LSSI
+                          ______________________________________ informa de que, como prestador de servicio de
+                          alojamiento
+                          de datos y en
+                          virtud de lo establecido en la Ley 34/2002 de 11 de julio de Servicios de la Sociedad de la
+                          Información y de Comercio
+                          Electrónico (LSSI), retiene por un periodo máximo de 12 meses la información imprescindible
+                          para
+                          identificar el origen de
+                          los datos alojados y el momento en que se inició la prestación del servicio. La retención de
+                          estos datos no afecta al
+                          secreto de las comunicaciones y sólo podrán ser utilizados en el marco de una investigación
+                          criminal o para la
+                          salvaguardia de la seguridad pública, poniéndose a disposición de los jueces y/o tribunales o
+                          del Ministerio que así los
+                          requiera.
+                          La comunicación de datos a las Fuerzas y Cuerpos del Estado se hará en virtud a lo dispuesto
+                          en
+                          la normativa sobre
+                          protección de datos personales.
+                          Derechos propiedad intelectual ______________________________
+                          _________________________________ es titular de todos los derechos de autor, propiedad
+                          intelectual, industrial,
+                          "know how" y cuantos otros derechos guardan relación con los contenidos del sitio web
+                          _______________________ y los
+                          servicios ofertados en el mismo, así como de los programas necesarios para su implementación y
+                          la información
+                          relacionada.
+                          No se permite la reproducción, publicación y/o uso no estrictamente privado de los contenidos,
+                          totales o parciales, del
+                          sitio web __________________________________ sin el consentimiento previo y por escrito.
+                          Propiedad intelectual del software
+                          El usuario debe respetar los programas de terceros puestos a su disposición por
+                          ____________________________, aun
+                          siendo gratuitos y/o de disposición pública.
+                          __________________________ dispone de los derechos de explotación y propiedad intelectual
+                          necesarios del software.
+                          El usuario no adquiere derecho alguno o licencia por el servicio contratado, sobre el software
+                          necesario para la prestación
+                          del servicio, ni tampoco sobre la información técnica de seguimiento del servicio, excepción
+                          hecha de los derechos y
+                          licencias necesarios para el cumplimiento de los servicios contratados y únicamente durante la
+                          duración de los mismos.
+                          Para toda actuación que exceda del cumplimiento del contrato, el usuario necesitará
+                          autorización
+                          por escrito por parte de
+                          _______________________________, quedando prohibido al usuario acceder, modificar, visualizar
+                          la
+                          configuración,
+                          estructura y ficheros de los servidores propiedad de _______________________________,
+                          asumiendo
+                          la responsabilidad
+                          civil y penal derivada de cualquier incidencia que se pudiera producir en los servidores y
+                          sistemas de seguridad como
+                          consecuencia directa de una actuación negligente o maliciosa por su parte.
+                          Propiedad intelectual de los contenidos alojados
+                          Se prohíbe el uso contrario a la legislación sobre propiedad intelectual de los servicios
+                          prestados por
+                          _______________________________ y, en particular de:
+                          • La utilización que resulte contraria a las leyes españolas o que infrinja los derechos de
+                          terceros.
+                          • La publicación o la transmisión de cualquier contenido que, a juicio de
+                          ________________________, resulte
+                          violento, obsceno, abusivo, ilegal, racial, xenófobo o difamatorio.
+                          • Los cracks, números de serie de programas o cualquier otro contenido que vulnere derechos de
+                          la propiedad
+                          intelectual de terceros.
+                          • La recogida y/o utilización de datos personales de otros usuarios sin su consentimiento
+                          expreso o contraviniendo
+                          lo dispuesto en Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril
+                          de
+                          2016,
+                          relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos
+                          personales y a la libre
+                          circulación de los mismos.
+                          • La utilización del servidor de correo del dominio y de las direcciones de correo electrónico
+                          para el envío de
+                          correo masivo no deseado.
+                          El usuario tiene toda la responsabilidad sobre el contenido de su web, la información
+                          transmitida y almacenada, los
+                          enlaces de hipertexto, las reivindicaciones de terceros y las acciones legales en referencia a
+                          propiedad intelectual,
+                          derechos de terceros y protección de menores.
+                          El usuario es responsable respecto a las leyes y reglamentos en vigor y las reglas que tienen
+                          que ver con el
+                          funcionamiento del servicio online, comercio electrónico, derechos de autor, mantenimiento del
+                          orden público, así como
+                          principios universales de uso de Internet.
+                          El usuario indemnizará a ___________________ por los gastos que generara la imputación de
+                          ______________________________ en alguna causa cuya responsabilidad fuera atribuible al
+                          usuario,
+                          incluidos
+                          honorarios y gastos de defensa jurídica, incluso en el caso de una decisión judicial no
+                          definitiva.
+                          Protección de la información alojada
+                          ______________________________ realiza copias de seguridad de los contenidos alojados en sus
+                          servidores, sin
+                          embargo no se responsabiliza de la pérdida o el borrado accidental de los datos por parte de
+                          los
+                          usuarios. De igual
+                          manera, no garantiza la reposición total de los datos borrados por los usuarios, ya que los
+                          citados datos podrían haber
+                          sido suprimidos y/o modificados durante el periodo del tiempo transcurrido desde la última
+                          copia
+                          de seguridad.
+                          Los servicios ofertados, excepto los servicios específicos de backup, no incluyen la
+                          reposición
+                          de los contenidos
+                          conservados en las copias de seguridad realizadas por ______________________________, cuando
+                          esta pérdida sea
+                          imputable al usuario; en este caso, se determinará una tarifa acorde a la complejidad y
+                          volumen
+                          de la recuperación,
+                          siempre previa aceptación del usuario.
+                          La reposición de datos borrados sólo está incluida en el precio del servicio cuando la pérdida
+                          del contenido sea debida a
+                          causas atribuibles a ________________________________
+                          Comunicaciones comerciales
+                          En aplicación de la LSSI. _______________________________ no enviará comunicaciones
+                          publicitarias o promocionales
+                          por correo electrónico u otro medio de comunicación electrónica equivalente que previamente no
+                          hubieran sido
+                          solicitadas o expresamente autorizadas por los destinatarios de las mismas.
+                          En el caso de usuarios con los que exista una relación contractual previa,
+                          ______________________________ sí está
+                          autorizado al envío de comunicaciones comerciales referentes a productos o servicios de
+                          ____________________________ que sean similares a los que inicialmente fueron objeto de
+                          contratación con el cliente.
+                          En todo caso, el usuario, tras acreditar su identidad, podrá solicitar que no se le haga
+                          llegar
+                          más información comercial a
+                          través de los canales de Atención al Cliente. </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-lg">Acepto los Términos</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal fade" id="Condiciones" tabindex="0" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable  modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Condiciones y Términos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Lorem ipsum,
+                          dolor sit amet consectetur adipisicing elit. Molestiae sed praesentium illum in dolor iste
+                          suscipit inventore debitis quibusdam necessitatibus odio hic sit, tempora architecto quis
+                          assumenda voluptatum est nobis quasi accusamus consectetur omnis magnam molestias? Voluptatum
+                          repellendus recusandae natus, explicabo in voluptate odit alias error ipsa iusto reiciendis
+                          voluptas modi cupiditate, cum consectetur nulla at fuga quidem libero vitae minima sequi nemo
+                          a.
+                          Amet possimus, et inventore sed culpa provident magnam nobis, modi rerum, beatae eveniet!
+                          Incidunt maxime perspiciatis impedit aperiam adipisci, saepe nihil animi harum, ipsa modi
+                          temporibus ut voluptate illo, facilis dolorem! Eveniet ratione odit quis! Possimus adipisci,
+                          voluptates, cupiditate ipsam nobis dignissimos sint fugiat quasi consequuntur, consequatur
+                          iusto
+                          nam eum nostrum debitis atque aut cumque quia. Rerum eaque sit aliquam quam earum, fuga
+                          perferendis repellat molestias quis aut error reprehenderit? Dignissimos repellendus maiores
+                          cumque earum similique nisi consectetur a, voluptatibus recusandae quibusdam at officia
+                          pariatur
+                          in nostrum. Nobis ullam, expedita consequuntur mollitia ipsum tenetur, repellendus, veritatis
+                          natus soluta fugit distinctio quasi in similique perferendis perspiciatis voluptatum a aliquid
+                          id minima sapiente adipisci cupiditate cum? Recusandae, vel provident aut odio tempore autem
+                          perferendis doloremque sed vero facere consectetur non optio voluptatem asperiores pariatur in
+                          esse! Eum, exercitationem.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-lg">Acepto los Términos</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="PoliticaCookies" tabindex="0" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Condiciones y Términos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p> Protección de datos de carácter personal según la LOPD
+                          _____________________________, en aplicación de la normativa vigente en materia de protección
+                          de
+                          datos de carácter
+                          personal, informa que los datos personales que se recogen a través de los formularios del
+                          Sitio
+                          web:
+                          ________________________________, se incluyen en los ficheros automatizados específicos de
+                          usuarios de los servicios
+                          de _______________________________
+                          La recogida y tratamiento automatizado de los datos de carácter personal tiene como finalidad
+                          el
+                          mantenimiento de la
+                          relación comercial y el desempeño de tareas de información, formación, asesoramiento y otras
+                          actividades propias de
+                          ______________________________________
+                          Estos datos únicamente serán cedidos a aquellas entidades que sean necesarias con el único
+                          objetivo de dar
+                          cumplimiento a la finalidad anteriormente expuesta.
+                          _______________________________________ adopta las medidas necesarias para garantizar la
+                          seguridad, integridad y
+                          confidencialidad de los datos conforme a lo dispuesto en el Reglamento (UE) 2016/679 del
+                          Parlamento Europeo y del
+                          Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que
+                          respecta al tratamiento de datos
+                          personales y a la libre circulación de los mismos.
+                          El usuario podrá en cualquier momento ejercitar los derechos de acceso, oposición,
+                          rectificación
+                          y cancelación
+                          reconocidos en el citado Reglamento (UE). El ejercicio de estos derechos puede realizarlo el
+                          propio usuario a través de
+                          email a: _________________________________ o en la dirección:
+                          ________________________________________
+                          El usuario manifiesta que todos los datos facilitados por él son ciertos y correctos, y se
+                          compromete a mantenerlos
+                          actualizados, comunicando los cambios a _________________________________________
+                          Finalidad del tratamiento de los datos personales:
+                          ¿Con qué finalidad trataremos tus datos personales?
+                          En __________________________________, trataremos tus datos personales recabados a través del
+                          Sitio Web:
+                          ______________________________, con las siguientes finalidades:
+                          1. En caso de contratación de los bienes y servicios ofertados a través de
+                          ____________________________, para
+                          mantener la relación contractual, así como la gestión, administración, información, prestación
+                          y
+                          mejora del
+                          servicio.
+                          2. Envío de información solicitada a través de los formularios dispuestos en
+                          ____________________________
+                          3. Remitir boletines (newsletters), así como comunicaciones comerciales de promociones y/o
+                          publicidad de
+                          ______________________________ y del sector.
+                          Te recordamos que puedes oponerte al envío de comunicaciones comerciales por cualquier vía y
+                          en
+                          cualquier momento,
+                          remitiendo un correo electrónico a la dirección indicada anteriormente.
+                          Los campos de dichos registros son de cumplimentación obligatoria, siendo imposible realizar
+                          las
+                          finalidades expresadas si
+                          no se aportan esos datos.
+                          ¿Por cuánto tiempo se conservan los datos personales recabados?
+                          Los datos personales proporcionados se conservarán mientras se mantenga la relación comercial
+                          o
+                          no solicites su
+                          supresión y durante el plazo por el cuál pudieran derivarse responsabilidades legales por los
+                          servicios prestados.
+                          Legitimación:
+                          El tratamiento de tus datos se realiza con las siguientes bases jurídicas que legitiman el
+                          mismo:
+                          1. La solicitud de información y/o la contratación de los servicios de
+                          ___________________________, cuyos
+                          términos y condiciones se pondrán a tu disposición en todo caso, de forma previa a una
+                          eventual
+                          contratación.
+                          2. El consentimiento libre, específico, informado e inequívoco, en tanto que te informamos
+                          poniendo a tu
+                          disposición la presente política de privacidad, que tras la lectura de la misma, en caso de
+                          estar conforme, puedes
+                          aceptar mediante una declaración o una clara acción afirmativa, como el marcado de una casilla
+                          dispuesta al
+                          efecto.
+                          En caso de que no nos facilites tus datos o lo hagas de forma errónea o incompleta, no
+                          podremos
+                          atender tu solicitud,
+                          resultando del todo imposible proporcionarte la información solicitada o llevar a cabo la
+                          contratación de los servicios.
+                          Destinatarios:
+                          Los datos no se comunicarán a ningún tercero ajeno a _________________________________, salvo
+                          obligación legal.
+                          Como encargados de tratamiento, tenemos contratados a los siguientes proveedores de servicios,
+                          habiéndose
+                          comprometido al cumplimiento de las disposiciones normativas, de aplicación en materia de
+                          protección de datos, en el
+                          momento de su contratación:
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-lg">Acepto las condiciones</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="dist/js/bootstrap.bundle.min.js"></script>
+  <script src="dist/umd/popper.min.js"></script>
+</body>
+
+</html>

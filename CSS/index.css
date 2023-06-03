@@ -1,0 +1,38 @@
+@import url("/SCSS/_variables.scss");
+@import url("/SCSS/_mixing.scss");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  background-image: url(/Arisay/bg_header.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-logo {
+  border-radius: 100%;
+}
+
+.t1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

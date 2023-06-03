@@ -1,0 +1,27 @@
+@import '../scss/bootstrap';
+@import '../scss/variables';
+
+
+
+// TIPOGRAFIA
+$fontLogo: $font-logo-leyenda;
+$fontDocu: $font-family-index;
+
+//TAMAÑOS FUENTES
+$h1-size: 3rem;
+$h2-size: 1,5rem;
+$h3-size: 1rem;
+$h4-size: 0.8rem;
+$h5-size: 0.5rem;
+
+$fs-ico-movil: $primary;
+$fs-ico-tablet: 1rem; 
+
+
+//COLORES
+$estrellas: rgb(242, 220, 54);
+$bg-boton1 : $primary;
+$bg-boton2: $secondary;
+$hover-bonton1: $secondary;
+$hover-boton2: $primary;
+$bg-articulo: $gray-300;  
