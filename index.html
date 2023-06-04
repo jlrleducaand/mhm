@@ -29,8 +29,8 @@
             <h2 class="font-logo text-primary fs-2 mt-2 ">MHM</h2>
           </a>
         </div>
-        <div class="cont-titulo d-flex align-self-md-center">
-          <h1 class="m-2  m-md-5  flex-grow-1 justify-content-center">Mantenimiento de Hosteleria Mediterranea</h1>
+        <div class="cont-titulo d-flex align-items-sm-center justify-content-around col-9 col-md-10">
+          <h1 class="m-2  m-md-5  fs-2">Mantenimiento de Hosteleria Mediterranea</h1>
         </div>
       </div>
       <!-- Contenedor de Botones -->
@@ -70,8 +70,8 @@
 
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white">Entrar</button>
                   </div>
                 </div>
               </div>
@@ -147,8 +147,8 @@
 
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white">Enviar</button>
                   </div>
                 </div>
               </div>
@@ -292,19 +292,29 @@
                   </div>
                   <div class="modal-body bg-light">
                     <form class="row  pt-2">
-                      <label for="nombre">Nombre:</label>
-                      <input type="text" id="nombre" name="nombre" required>
+                      <div class="col-md-6 ">
+                        <label for="inputNombreContacto" class="form-label">Nombre Contacto</label>
+                        <input type="Nombre" class="form-control" id="inputNombreContacto" required>
+                      </div>
 
-                      <label for="email">Correo Electrónico:</label>
-                      <input type="email" id="email" name="email" required>
+                      <div class="col-md-6">
+                        <label for="inputNombreEstablecimiento" class="form-label">Nombre Establecimiento</label>
+                        <input type="Nombre" class="form-control" id="inputNombreEstablecimiento" required>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputEmailContacto" class="form-label mt-1">Email</label>
+                        <input type="email" class="form-control" id="inputEmailContacto" required>
+                      </div>
 
-                      <label for="mensajeContacto">Mensaje:</label>
-                      <textarea id="mensajeContacto" name="mensaje" rows="5" required></textarea>
+                      <div class="col-md-12">
+                      <label for="mensajeContacto" class="form-label mt-1">Mensaje:</label>
+                      <textarea class="form-control" id="mensajeContacto" name="mensaje" rows="5" required></textarea>
+                    </div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white">Enviar</button>
                   </div>
                 </div>
               </div>
@@ -494,9 +504,56 @@
 
                   <h3 class="p-5px">Ref-001</h3>
                   <h3>Calentador Baño Maria</h3>
-                  <div class=" bg-secondary p-2 rounded-2 text-center">
-                    <a href="" class="text-white ">Especificaciones</a>
+                  <div class="p-2 rounded-2 text-center">
+                    <button type="button" class="btn btn-lg btn-secondary btn-outline-primary text-white rounded-2"
+                      data-bs-toggle="modal" data-bs-target="#001">Especificaciones
+                    </button>
                   </div>
+                  <!-- Modal Especificaciones 001 -->
+                  <div class="modal fade" id="001" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Calentador Baño Maria</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-light">
+                    <form class="row  d-flex flex-column align-items-center pt-2">
+                      <img src="./Arisay/catalogo/BañoMaria.bmp" alt="" class="pb-2">
+
+                      <div class="col-md-8 ">
+                        <label for="Material" class="form-label ">Material:</label>
+                        <label for="Valor" class="form-label"><span class="rojo ms-3">Acero inoxidable</span></label>
+                      </div>
+                      <div class="col-md-8">
+                        <label for="Capacidad" class="form-label ">Capacidad:</label>
+                        <label for="Valor" class="form-label"><span class="rojo ms-3">10 litros</span></label>
+                      </div>
+                      <div class="col-md-8">
+                        <label for="Tension" class="form-label ">Tension:</label>
+                        <label for="Valor" class="form-label"><span class="rojo ms-3">220V</span></label>
+                      </div>
+                      <div class="col-md-8">
+                        <label for="Potencia" class="form-label ">Potencia:</label>
+                        <label for="Valor" class="form-label"><span class="rojo ms-3">1000W</span></label>
+                      </div>
+                      
+                    </form>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white" 
+                    data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary btn-outline-secondary text-white">Añadir al carrito</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
               </article>
               </div>
               <div class="col mb-3">
