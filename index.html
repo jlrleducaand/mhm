@@ -158,111 +158,120 @@
           <!-- Boton de Avisos -->
           <!-- <div class="avis-1 dropdown d-flex flex-column "> -->
             <div class="dropdown btn-group col-12 col-sm-6 col-md-3 col-lg-2 reset my-1 my-md-2 px-1">
-
-            <button type="button"
-              class="btn btn-lg btn-secondary btn-outline-primary dropdown-toggle  text-white flex-grow-1"
+              <button type="button"
+              class="btn btn-lg btn-secondary  btn-outline-primary  dropdown-toggle  text-white flex-grow-1"
               id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-megaphone"></i> Avisos
             </button>
-            <!-- DESPLEGABLE PARA EL NAVEGADOR AVISOS -->
-            <ul class="dropdown-menu bg-dark w-50" aria-labelledby="dropdownMenuButton">
-              <!-- Lanzador para el modal Averias en un link -->
-              <li>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#averia">Averias</a>
-              </li>  
-                <!-- Modal para AVISOS -->
-                <div class="modal fade" id="averia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
-                  aria-labelledby="averiasLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
+              <ul class="dropdown-menu bg-dark w-75" aria-labelledby="avisos-btn">
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#averia-modal">Avería</a></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#pedido-modal">Pedido</a></li>
+                  <li><hr class="dropdown-divider border-light"></li>
+                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#otros-avisos-modal">Otros
+                          Avisos</a></li>
+              </ul>
+          </div>
+          <!-- Modal para Avería -->
+          <div class="modal fade" id="averia-modal" tabindex="-1" aria-labelledby="averia-modal-label" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="averiaLabel">Averias</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <h5 class="modal-title" id="averia-modal-label">Avería</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body bg-light">
                         <form class="row  pt-2">
                           <div class="col-md-6">
-                            <label for="inputEmailAverias" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmailAverias">
+                            <label for="inputEmaiAveria" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmailAveria">
                           </div>
                           <div class="col-md-6">
-                            <label for="inputPasswordAverias" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPasswordAverias">
+                            <label for="inputNombreClienteAveria" class="form-label">Nombre Cliente</label>
+                            <input type="password" class="form-control" id="inputNombreClientedAveria">
+                          </div>
+                          <div class="p-3">
+                            <label  for="mensaje">Mensaje:</label>
+                            </div>
+                          <div  >                          
+                            <textarea class="col-12" id="mensaje" name="mensaje" rows="10" required></textarea>
                           </div>
                         </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                          <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                          <button type="button" class="btn btn-primary btn-outline-secondary text-white">Enviar </button>
                       </div>
-                    </div>
                   </div>
-                </div>
-              
-
-              <!-- Lanzador para el modal Pedidos en un link -->
-              <li>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#pedido">Pedidos</a>
-              </li> 
-                
-                <!-- Modal para PEDIDOS -->
-                <div class="modal fade" id="pedido" tabindex="0" aria-labelledby="pedidoLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
+              </div>
+          </div>
+          
+          <!-- Modal para Pedido -->
+          <div class="modal fade" id="pedido-modal" tabindex="-1" aria-labelledby="pedido-modal-label" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="pedidoLabel">Averias</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          <h5 class="modal-title" id="pedido-modal-label">Pedido</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">
-                        <p>cuerpo del modal pedido</p>
-                        <form>
-                          <!-- Aquí van los campos del formulario para los pedidos -->
-                          <h1>prueba de modal pedido</h1>
+                      <div class="modal-body bg-light">
+                        <form class="row  pt-2">
+                          <div class="col-md-6">
+                            <label for="inputEmaiPedido" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmailPedido">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputNombreClientePedido" class="form-label">Nombre Cliente</label>
+                            <input type="password" class="form-control" id="inputNombreClientedPedido">
+                          </div>
+                          <div class="p-3">
+                            <label  for="mensaje">Articulos:</label>
+                            </div>
+                          <div  >                          
+                            <textarea class="col-12" id="mensaje" name="mensaje" rows="10" required></textarea>
+                          </div>
                         </form>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                          <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                          <button type="button" class="btn btn-primary btn-outline-secondary text-white">Enviar </button>
                       </div>
-                    </div>
+                      </div>
+              </div>
+          </div>
+          
+          <!-- Modal para Otros Avisos -->
+          <div class="modal fade" id="otros-avisos-modal" tabindex="-1" aria-labelledby="otros-avisos-modal-label"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="pedido-modal-label">Otros Avisos</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
-                </div>
-              
-
-              <!-- DIVISOR LINEA -->
-              <li>
-                <hr class="dropdown-divider ">
-              </li>
-
-              <!-- Lanzador para el modal Otros Avisos en un link -->
-              <li>
-                <a class="dropdown-item" href="HTML/formOtrosAvisos.html">Otros Avisos</a>
-                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#otroAviso">Otros Avisos</a>
-              </li> 
-                <!-- Modal para OTROS AVISOS -->
-                <div class="modal fade" id="otroAviso" tabindex="0" aria-labelledby="otroAvisoLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="otroAvisoLabel">otroAviso</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body bg-light">
+                    <form class="row  pt-2">
+                      <div class="col-md-6">
+                        <label for="inputEmaiOtrosAvisos" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmailOtrosAvisos">
                       </div>
-                      <div class="modal-body">
-                        <p>cuerpo del modal otroAviso</p>
-                        <form>
-                          <!-- Aquí van los campos del formulario para los otros Aviso -->
-                          <h1>prueba de modal otroAviso</h1>
-                        </form>
+                      <div class="col-md-6">
+                        <label for="inputNombreClienteOtrosAvisos" class="form-label">Nombre Cliente</label>
+                        <input type="password" class="form-control" id="inputNombreClientedOtrosAvisos">
                       </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      <div class="p-3">
+                        <label  for="mensaje">Avisos:</label>
+                        </div>
+                      <div  >                          
+                        <textarea class="col-12" id="mensaje" name="mensaje" rows="10" required></textarea>
                       </div>
-                    </div>
+                    </form>
                   </div>
-                </div>
-            </ul>
-
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-primary btn-outline-secondary text-white" data-bs-dismiss="modal">Eliminar</button>
+                      <button type="button" class="btn btn-primary btn-outline-secondary text-white">Enviar </button>
+                  </div>
+                  </div>
+              </div>
           </div>
           <!-- Boton de Contacto -->
           <!-- <div class="avis-2 d-flex flex-column "> -->
@@ -390,7 +399,7 @@
       <!-- DESPLEGABLES DE SELECCION -->
       <div class="container-fluid reset">
         <div class="container-fluid d-flex flex-column  my-2   flex-md-row flex-wrap justify-content-lg-center reset">
-          <div class="btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1 ">
+          <div class="dropdown btn-group col-12 col-md-6 flex-grow-1 col-lg-3 p-1 ">
             <button class="btn btn-secondary btn-lg" type="button">
               Todas las marcas
             </button>
@@ -470,8 +479,8 @@
           <div class="bg-black text-center">
             <h3 class="bg-black text-white py-2 ">LOS MAS VENDIDOS</h3>
           </div>
-          <div class="row reset">
-            <div class="col-12 col-md-6 col-lg-4 text-center p-0 mt-2">
+          <div class="row reset g-1">
+            <div class="container-fluid col-12 col-md-6 col-lg-4 text-center p-0 mt-2">
               <article class="card ">
                 <div class="card-body articulos">
                   <img src="./Arisay/catalogo/BañoMaria.bmp" alt="" class="">
