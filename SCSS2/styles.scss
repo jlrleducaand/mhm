@@ -28,8 +28,6 @@ img {
   width: 100%;
 }
 
-
-
 .font-logo {
   color: $primary;
   font-family: $font-logo-leyenda; 
@@ -70,5 +68,8 @@ img {
 .minimos{
   padding-right: .5rem;
   padding-left:  0;
+}
+.articulo{
+  background-color: $light;
 }
 
